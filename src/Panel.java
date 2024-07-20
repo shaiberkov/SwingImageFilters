@@ -31,8 +31,8 @@ public class Panel extends JPanel implements MouseListener, MouseMotionListener 
         repaint();
         this.addMouseListener(this);
         this.addMouseMotionListener(this);
-        this.setFocusable(true);
-        this.requestFocus();
+//        this.setFocusable(true);
+//        this.requestFocus();
 
 //        Color color = picture();
 //        paintNewPicture(color);
@@ -69,7 +69,7 @@ public class Panel extends JPanel implements MouseListener, MouseMotionListener 
     }
 
     public void paintNewPicture(Color color) {
-        for (int i = 0; i < this.image.getWidth(); i++) {
+        for (int i = 0; i < this.image.getWidth()/2; i++) {
 
             for (int j = 0; j < this.image.getHeight(); j++) {
                 this.image.setRGB(i, j, color.getRGB());
